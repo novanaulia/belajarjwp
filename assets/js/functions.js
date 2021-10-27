@@ -60,6 +60,7 @@ greeting();
 
 */
 
+/*
 function login(username, password) {
   if (username && password) {
     document.write("Selamat datang user Anda " + username + " dengan password " + password);
@@ -86,7 +87,11 @@ a = 10;
 t = 20;
 luas_segitiga(a, t);
 
+*/
+
 /* STRUKTUR DATA */
 
+/*
 let fruits = ["Apple", "Orange", "Plum"];
 document.write(fruits[2]);
+*/
