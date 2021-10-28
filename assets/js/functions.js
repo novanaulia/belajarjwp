@@ -1,54 +1,56 @@
 /* ALERT */
-//alert("Hello, world!");
+//alert("Hai, yuk belajar java");
 
+/* MENGGUNAKAN VARIABEL */
 let nama_depan = "novan";
 let nama_belakang = "aulia";
 
 let nama_lengkap = `${nama_depan} ${nama_belakang}`;
 
-//alert(nama_lengkap);
+document.write("Menggabung variabel:<p>");
+document.write(nama_lengkap);
+
+/* OPERASI BILANGAN */
 
 let barang = 80;
 let jumlah = 2;
 let total = barang * jumlah;
 
-//alert("Total Barang " + total);
+document.write("<br><br><p>Operasi Bilangan:</p>");
+document.write("Total Barang : " + total);
 
 /* KONSTANTA */
-const negara = "indonesia";
-const database = "jwp";
+const phi = 3.14;
 
-console.log("Total barang via konsol = " + total);
-
-//document.write(total);
+document.write("<br><br><p>Variabel konstanta = " + phi);
 
 /* KONDISIONAL */
-/*  
-let nama = prompt("Siapa Namamu?", "");
+document.write("<br><br><p>Percabangan:<p> nama = novan<p>");
 
+let nama = "novan";
 if (nama == "novan") {
-  alert("Benar kamu novan, boleh masuk");
+  document.write("Benar kamu novan, boleh masuk");
 } else {
-  alert("kamu gak boleh masuk");
+  document.write("kamu gak boleh masuk");
 }
-*/
 
 /* LOOPING */
-/*
+document.write("<br><br><p>LOOPING for i <p>");
 for (let i = 0; i <= 10; i++) {
   document.write(i + "<br>");
 }
 
-let i = 100;
-while (i <= 120) {
-  document.write(i + "<br>");
-  i++;
+document.write("<br><br><p>LOOPING while <p>");
+
+let b = 100;
+while (b <= 120) {
+  document.write(b + "<br>");
+  b++;
 }
-*/
 
 /* FUNCTION */
+document.write("<br><br><p>Membuat Fungsi Greeting <p>");
 
-/*
 function greeting() {
   if (nama_depan == "novan") {
     document.write("benar nama kamu " + nama_depan);
@@ -58,9 +60,8 @@ function greeting() {
 }
 greeting();
 
-*/
+document.write("<br><br><p>Membuat Fungsi Login <p>");
 
-/*
 function login(username, password) {
   if (username && password) {
     document.write("Selamat datang user Anda " + username + " dengan password " + password);
@@ -77,21 +78,20 @@ let password = "teh";
 
 login(username, password);
 
+document.write("<br><br><p>Membuat Fungsi Segitiga <p>");
+
 function luas_segitiga(a, t) {
   luas = (1 / 2) * (a, t);
-  document.write("<p>" + luas + "</p>");
+  document.write("<p>Luas segitiga adalah : " + luas + "</p>");
 }
 
-let a, t;
-a = 10;
-t = 20;
+let a = 10;
+let t = 20;
 luas_segitiga(a, t);
-
-*/
 
 /* STRUKTUR DATA */
 
-/*
-let fruits = ["Apple", "Orange", "Plum"];
-document.write(fruits[2]);
-*/
+document.write("<br><br><p>Mengambil nilai Array<p>");
+
+let buah = ["Apple", "Orange", "Plum"];
+document.write(buah[2]);

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/custom.css" />
+    <title>Portofolio 1: Novan</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
+        <ul id="menu-list">
+          <li>
+            <a href="index.html">Sego</a>
+          </li>
+          <li>
+            <a href="">Wedang Adem</a>
+          </li>
+          <li>
+            <a href="">Wedang Anget</a>
+          </li>
+          <li>
+            <a href="">Jajan</a>
+          </li>
+          <li>
+            <a href="">Pesen</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="gallery">
+        <h2>Hasil Pemrograman Java</h2>
+      </section>
+    </div>
+    <script src="assets/js/functions.js"></script>
+    <script>
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container"></div>
+    </footer>
+    <!-- ======= End Footer ======= -->
+  </body>
+</html>
